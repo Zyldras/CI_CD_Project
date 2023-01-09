@@ -1,6 +1,5 @@
 # CI_CD_Project : To do list
 
----
 
 ## Subject
 
@@ -16,7 +15,6 @@ What are the expected submissions?
 - The code must be pushed on GitHub on a repository. This repository must be public or must be shared with the user emmanuelgautier.
 - Explanations in the README or any other relevant files why the code is structured as it is and the other tech choices made.
 
----
 
 ## Backlog
 ### CI
@@ -32,28 +30,33 @@ What are the expected submissions?
 ### CD
 - [ ] **Deployment**
 
----
 
 ## Techno & Structure
 
 > - **HTML**
+>
 > For the structure of the application
 
 > - **CSS**
+>
 > To add more style and get a better looking
 
 > - **Javascript (Node.js)**
 >   - **Jquery**
+>
 > 		Library that make interactions between HTML and Javascript easier
 > 	- **Jest**
+>
 > 		Framework for unit tests
 > 
 > To manage all the data interactions
 
 > - **Bootstrap**
+>
 > To get goods looking with simplicity (if i have time)
 
 > - **Firebase**
+>
 > Offer hosting services for the deployment
 
 I will use the local storage to save data with a json file.
