@@ -1,4 +1,4 @@
-# CI_CD_Project : To do list
+# CI_CD_Project : Patterns
 
 
 ## Subject
@@ -22,10 +22,13 @@ What are the expected submissions?
 - [ ] **Dependencies**
 - [ ] **Unit tests**
 ### App
+- [ ] **Ability to add pattern**
 - [ ] **Ability to add code sample to demonstrate the pattern**
 - [ ] **Ability to add comments that explain when use the pattern**
 - [ ] **The data need to be store locally**
-- [ ] Ability to add images and diagrams
+- [ ] Ability to delete patterns
+- [ ] Ability to modify patterns
+- [ ] Ability to add images and diagrams to the pattern description
 - [ ] Have a great looking
 ### CD
 - [ ] **Deployment**

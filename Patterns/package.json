@@ -1,7 +1,7 @@
 {
-  "name": "to_do_list",
+  "name": "patterns",
   "version": "1.0.0",
-  "description": "CI CD Project To do list",
+  "description": "CI CD Project Patterns",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
