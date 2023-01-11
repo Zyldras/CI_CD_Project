@@ -21,11 +21,6 @@
   },
   "homepage": "https://github.com/Zyldras/CI_CD_Project#readme",
   "devDependencies": {
-    "jest": "^29.3.1",
-    "jquery": "^3.6.3",
-    "jsdom": "^21.0.0"
-  },
-  "jest": {
-    "setupFiles": ["./src/setup-jest.js"]
+    "jest": "^29.3.1"
   }
 }

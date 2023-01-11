@@ -6,5 +6,3 @@ function sum (a, b) {
 if (typeof module === 'object') {
 	module.exports = sum
 }
-
-export {sum}
