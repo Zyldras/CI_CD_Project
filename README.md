@@ -1,6 +1,8 @@
 # CI_CD_Project : Patterns
 
 
+Lien de l'application: [https://patternslist.azurewebsites.net](https://patternslist.azurewebsites.net/)
+
 ## Subject
 
 You have to answer as best as you can the following user needs: "I am a developer and I care a lot about good code patterns. Unfortunately, there is plenty of sites and explanations about those patterns. I would like to have a site where I can put the patterns with a code sample and when to use it. A web app would be fine!"
