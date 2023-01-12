@@ -18,20 +18,20 @@ What are the expected submissions?
 
 ## Backlog
 ### CI
-- [ ] **Git action**
-- [ ] **Dependencies**
+- [x] **Git action**
+- [x] **Dependencies**
 - [ ] **Unit tests**
 ### App
-- [ ] **Ability to add pattern**
-- [ ] **Ability to add code sample to demonstrate the pattern**
-- [ ] **Ability to add comments that explain when use the pattern**
-- [ ] **The data need to be store locally**
-- [ ] Ability to delete patterns
+- [x] **Ability to add pattern**
+- [x] **Ability to add code sample to demonstrate the pattern**
+- [x] **Ability to add comments that explain when use the pattern**
+- [x] **The data need to be store locally**
+- [x] Ability to delete patterns
 - [ ] Ability to modify patterns
 - [ ] Ability to add images and diagrams to the pattern description
 - [ ] Have a great looking
 ### CD
-- [ ] **Deployment**
+- [x] **Deployment**
 
 
 ## Techno & Structure
@@ -40,26 +40,15 @@ What are the expected submissions?
 >
 > For the structure of the application
 
-> - **CSS**
->
-> To add more style and get a better looking
-
-> - **Javascript (Node.js)**
->   - **Jquery**
->
-> 		Library that make interactions between HTML and Javascript easier
-> 	- **Jest**
+> - **Javascript**
+>     - **Jest**
 >
 > 		Framework for unit tests
 > 
 > To manage all the data interactions
 
-> - **Bootstrap**
->
-> To get goods looking with simplicity (if i have time)
-
-> - **Firebase**
+> - **Microsoft Azure cloud**
 >
 > Offer hosting services for the deployment
 
-I will use the local storage to save data with a json file.
+I will use the local storage to save data in Json format.
