@@ -52,13 +52,13 @@ printPatterns()
 
 // Event handler
 
-let btn = document.querySelector('#btn-add')
-btn.addEventListener('click', event => {
-	let name = document.getElementById('name')
-	let code = document.getElementById('code')
-	let coment = document.getElementById('coment')
-	addPattern(name.value, code.value, coment.value)
-})
+// let btn = document.querySelector('#btn-add')
+// btn.addEventListener('click', event => {
+// 	let name = document.getElementById('name')
+// 	let code = document.getElementById('code')
+// 	let coment = document.getElementById('coment')
+// 	addPattern(name.value, code.value, coment.value)
+// })
 
 let btnDel = document.querySelectorAll('button[name="btn-del"]')
 btnDel.forEach((btn) => {
@@ -77,9 +77,5 @@ function sum (a, b) {
 
 
 if (typeof module === 'object') {
-	module.exports = {
-		sum,
-		addPattern,
-		delPattern
-	}
+	module.exports = sum
 }
