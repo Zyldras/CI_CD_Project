@@ -1,32 +1,33 @@
-// Fuctions definition
+// < Fuctions definition
 
 function printPatterns () {
 	if (localStorage.length != 0) {
-		document.getElementById('list').innerHTML = ''
-	
 		Object.keys(localStorage).forEach((key) => {
-			let val = JSON.parse(localStorage[key])
-			let li = document.createElement('li')
+			let elem = document.getElementById(key)
+			if (!elem) {
+				let val = JSON.parse(localStorage[key])
+				let li = document.createElement('li')
+		
+				let name = document.createElement('h3')
+				name.textContent = key
+				li.appendChild(name)
+				
+				let code = document.createElement('p')
+				code.textContent = val.code
+				li.appendChild(code)
+		
+				let coment = document.createElement('p')
+				coment.textContent = val.coment
+				li.appendChild(coment)
 	
-			let name = document.createElement('h3')
-			name.textContent = key
-			li.appendChild(name)
-			
-			let code = document.createElement('p')
-			code.textContent = val.code
-			li.appendChild(code)
-	
-			let coment = document.createElement('p')
-			coment.textContent = val.coment
-			li.appendChild(coment)
-
-			let suppr = document.createElement("button")
-			suppr.id = key
-			suppr.name = 'btn-del'
-			suppr.textContent = 'Delete'
-			li.appendChild(suppr)
-	
-			document.getElementById('list').appendChild(li)
+				let suppr = document.createElement("button")
+				suppr.id = key
+				suppr.className = 'btn-del'
+				suppr.textContent = 'Delete'
+				li.appendChild(suppr)
+		
+				document.getElementById('list').appendChild(li)
+			}
 		})	
 	}
 }
@@ -39,20 +40,23 @@ function addPattern (name, code, coment) {
 
 function delPattern (name) {
 	localStorage.removeItem(name)
+	document.getElementById(name).parentElement.remove()
 	printPatterns()
 }
 
+// Fuctions definition >
 
-// Main
+
+// < Main
 
 printPatterns()
 
-// Main
+// Main >
 
 
-// Event handler
+// < Event handler
 
-let btn = document.querySelector('#btn-add')
+let btn = document.getElementById('btn-add')
 if (btn) {
 	btn.addEventListener('click', event => {
 		let name = document.getElementById('name')
@@ -62,15 +66,17 @@ if (btn) {
 	})
 }
 
-let btnDel = document.querySelectorAll('button[name="btn-del"]')
-btnDel.forEach((btn) => {
-	console.log(btn)
-	btn.addEventListener('click', event => {
-		let name = btn.id
-		console.log(name)
-		delPattern(name)
-	})
-})
+let btnDel = document.getElementsByClassName('btn-del')
+if (btnDel.length > 0) {
+	for (let i = 0 ; i < btnDel.length ; i++) {
+		btnDel[i].addEventListener('click', event => {
+			delPattern(event.target.id)
+		})
+	}
+}
+
+
+// Event handler >
 
 
 function sum (a, b) {
