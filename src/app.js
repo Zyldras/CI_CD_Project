@@ -28,11 +28,15 @@ function printPatterns () {
 		
 				document.getElementById('list').appendChild(li)
 			}
-		})	
+		})
 	}
 }
 
 function addPattern (name, code, coment) {
+	if (name == '' || code == '' || coment == '') {
+		alert("Veuillez remplir tous les champs !")
+		return
+	}
 	let val = {code: code, coment: coment}
 	localStorage.setItem(name, JSON.stringify(val))
 	printPatterns()
