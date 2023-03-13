@@ -2,15 +2,31 @@
  * @jest-environment jsdom
  */
 
-const sum = require("./app.js")
+const app = require("./app.js")
+window.alert = jest.fn()
 
-
-describe('test app', () => {
-	test('test 1 + 2 = 3', () => {
-		expect(sum(1, 2)).toBe(3)
-	})
+describe('test addPattern', () => {
 	
-	test('test -1 + -2 = -3', () => {
-		expect(sum(-1, -2)).toBe(-3)
+	test('return -1 with name="" code="" coment=""', () => {
+		expect(app.addPattern("", "", "")).toBe(-1)
 	})
+	test('return -1 with name="d" code="" coment=""', () => {
+		expect(app.addPattern("d", "", "")).toBe(-1)
+	})
+	test('return -1 with name="" code="d" coment=""', () => {
+		expect(app.addPattern("", "d", "")).toBe(-1)
+	})
+	test('return -1 with name="" code="" coment="d"', () => {
+		expect(app.addPattern("", "", "d")).toBe(-1)
+	})
+	test('return -1 with name="d" code="d" coment=""', () => {
+		expect(app.addPattern("d", "d", "")).toBe(-1)
+	})
+	test('return -1 with name="d" code="" coment="d"', () => {
+		expect(app.addPattern("d", "", "d")).toBe(-1)
+	})
+	test('return -1 with name="" code="d" coment="d"', () => {
+		expect(app.addPattern("", "d", "d")).toBe(-1)
+	})
+
 })

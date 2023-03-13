@@ -30,22 +30,25 @@ function printPatterns () {
 			}
 		})
 	}
+	return 1
 }
 
 function addPattern (name, code, coment) {
 	if (name == '' || code == '' || coment == '') {
 		alert("Veuillez remplir tous les champs !")
-		return
+		return -1
 	}
 	let val = {code: code, coment: coment}
 	localStorage.setItem(name, JSON.stringify(val))
 	printPatterns()
+	return 1
 }
 
 function delPattern (name) {
 	localStorage.removeItem(name)
 	document.getElementById(name).parentElement.remove()
 	printPatterns()
+	return 1
 }
 
 // Fuctions definition >
@@ -71,7 +74,7 @@ if (btn) {
 }
 
 let btnDel = document.getElementsByClassName('btn-del')
-if (btnDel.length > 0) {
+if (btnDel) {
 	for (let i = 0 ; i < btnDel.length ; i++) {
 		btnDel[i].addEventListener('click', event => {
 			delPattern(event.target.id)
@@ -83,11 +86,6 @@ if (btnDel.length > 0) {
 // Event handler >
 
 
-function sum (a, b) {
-	return a + b
-}
-
-
 if (typeof module === 'object') {
-	module.exports = sum
+	module.exports = {addPattern, delPattern}
 }
