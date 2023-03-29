@@ -1,7 +1,7 @@
 # CI_CD_Project : Patterns
 
 
-Lien de l'application: [https://patternslist.azurewebsites.net](https://patternslist.azurewebsites.net/)
+Application link : [https://patternslist.azurewebsites.net](https://patternslist.azurewebsites.net/)
 
 ## Subject
 
